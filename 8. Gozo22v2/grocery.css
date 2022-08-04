@@ -1,0 +1,299 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: cursive;
+}
+
+.container {
+  background-color: rgba(194, 227, 227, 0.122);
+}
+
+nav {
+  max-width: 100%;
+  display: block;
+  height: 420px;
+  background-image: url(./img/banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+nav > .fa {
+  padding: 10px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px;
+}
+
+nav > a.fa.btn {
+
+  background-color: #fff;
+  color: black;
+  margin: 20px;
+}
+
+nav > .fa:hover {
+  opacity: 0.7;
+}
+
+
+.paper {
+  display: block;
+  margin: auto;
+  width: 1800px;
+  border: 1px solid #ccc;
+  margin-top: -80px;
+  margin-bottom: -80px;
+  height: 140vh;
+  padding: 80px;
+  background-color: #fff;
+  box-shadow: 10px 10px 5px 0px rgba(74, 71, 71, 0.64);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(74, 71, 71, 0.64);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(74, 71, 71, 0.64);
+}
+
+.logo {
+  padding: 20px;
+  font-size: 36px;
+  margin-top: -60px;
+}
+
+.grid {
+  max-width: 1600px;
+  display: grid;
+  margin: auto;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 61px;
+  margin-top: 40px;
+}
+
+
+.category {
+  display: flex;
+  width: 300px;
+  height: 350px;
+  border-radius: 5px;
+}
+
+.category > h3 {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  width: 40%;
+  height: 90px;
+  background-color: rgba(199, 145, 80, 0.596);
+  margin: 20px;
+  border-radius: 5px;
+  padding: 40px;
+}
+
+.category > .items {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: right;
+  padding: 10px;
+  margin: 5px;
+  margin-left: -40px;
+  background-color: rgba(173, 216, 230, 0.26);
+  border-radius: 5px;
+}
+
+.category > .items > p {
+  font-size: 16px;
+  padding: 8px;
+  margin: 2px;
+  color: black;
+}
+
+footer {
+  position: absolute;
+  z-index: -1;
+  bottom: 1;
+  width: 100%;
+  height: 450px;
+  background-color: rgba(173, 216, 230, 0.548);
+}
+
+footer > p {
+  display: block;
+  padding-top: 120px;
+  text-align: center;
+  font-size: 24px;
+}
+
+
+
+.socials {
+  display: block;
+  text-align: center;
+  margin-top: 150px;
+}
+
+.socials > .fa {
+  padding: 10px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px;
+}
+
+.socials > .fa:hover {
+  opacity: 0.7;
+}
+
+/* facebook */
+
+.socials > .fa-facebook {
+  background: #3b589896;
+  color: white;
+}
+
+/* Twitter */
+.socials > .fa-twitter {
+  background: #55acee77;
+  color: white;
+}
+
+.btn {
+  background-color: #fff;
+  color: black;
+}
+
+
+@media screen and (min-width: 280px) and (max-width: 550px) {
+
+  .container {
+    width: 100%;
+  }
+
+  .paper {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    box-shadow: none;
+    border: none;
+  }
+
+  nav {
+    width: 100%;
+    height: 60px;
+  }
+
+  .grid {
+    width: 90%;
+    height: 100vh;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 5px;
+  }
+
+  .logo {
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+  }
+
+  hr {
+    display: none;
+  }
+
+  footer {
+    display: none;
+  }
+
+}
+
+
+@media screen and (min-width: 551px) and (max-width: 750px) {
+
+.container {
+  width: 100%;
+}
+
+.paper {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  box-shadow: none;
+  border: none;
+}
+
+nav {
+  width: 100%;
+  height: 60px;
+}
+
+.grid {
+  width: 90%;
+  height: 100vh;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px;
+}
+
+.logo {
+  font-size: 18px;
+  padding: 0;
+  margin: 0;
+}
+
+hr {
+  display: none;
+}
+
+footer {
+  display: none;
+}
+
+}
+
+
+@media screen and (min-width: 751px) and (max-width: 999px) {
+
+.container {
+  width: 100%;
+}
+
+.paper {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  box-shadow: none;
+  border: none;
+}
+
+nav {
+  width: 100%;
+  height: 60px;
+}
+
+.grid {
+  width: 90%;
+  height: 100vh;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px;
+}
+
+.logo {
+  font-size: 18px;
+  padding: 0;
+  margin: 0;
+}
+
+hr {
+  display: none;
+}
+
+footer {
+  display: none;
+}
+
+}

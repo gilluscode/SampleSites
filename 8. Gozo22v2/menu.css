@@ -1,0 +1,329 @@
+* {
+  box-sizing: border-box;
+  font-family: Inter, sans-serif;
+  margin: 0;
+}
+
+/* button stying */
+.btn {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px gray;
+  margin: 10px;
+  cursor: pointer;
+  background-color: rgba(240, 248, 255, 0.588);
+}
+
+.btn:hover {
+  background-color: rgba(255, 235, 205, 0.726);
+  color: black;
+}
+
+/* background photo */
+.container {
+  width: 100%;
+  background: url(./img/pebbles.jpg);
+  background-size: cover;
+}
+
+/* getting menu in the middle */
+.center {
+  width: 100%;
+  display: block;
+  margin: auto;
+}
+
+/* grid menu styles */
+.grid {
+  max-width: 1800px;
+  display: grid;
+  margin: auto;
+  column-gap: 20px;
+  grid-template-columns: 600px 600px 600px;
+  object-fit: contain;
+}
+
+/* Navbar Styles */
+nav {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background-color: #1118277c;
+  padding: 30px;
+  justify-content: space-between;
+}
+
+.logo-text {
+  font-size: xx-large;
+  padding-left: 30px;
+  color: aliceblue;
+}
+
+.date {
+  font-size: xx-large;
+  margin-right: 130px;
+  color: aliceblue;
+}
+
+/* Menu box Styles */
+
+.box {
+  background-color: rgba(240, 248, 255, 0.856);
+  padding: 10px;
+  display: block;
+  margin: auto;
+  width: 600px;
+  border: 1px solid #ccc;
+  margin-top: 82px;
+  margin-bottom: 84px;
+  border-radius: 15px;
+}
+
+/* title with date */
+.box-date {
+  width: 100%;
+  background-color: #111827;
+  color: aliceblue;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.box-date > h1 {
+  font-size: 36px;
+  text-align: center;
+  padding: 40px;
+}
+
+.box > .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 20px;
+  background: #111827;
+  border-radius: 38.4px;
+  width: 164px;
+  height: 64px;
+}
+
+.box > .icon > h2 {
+  color: aliceblue;
+  text-align: center;
+}
+
+.box-title {
+  color: #111827;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.box-desc {
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* footer styles */
+
+footer {
+  width: 100%;
+  bottom: 0;
+  height: 150px;
+  background-color: #55acee77;
+}
+
+.socials {
+  display: block;
+  text-align: center;
+  padding: 40px;
+}
+
+.socials > .fa {
+  padding: 10px;
+  font-size: 30px;
+  width: 90px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px;
+}
+
+.socials > a.fa.btn {
+  color: #111827;
+}
+
+.socials > .fa:hover {
+  opacity: 0.7;
+}
+
+/* facebook */
+
+.socials > .fa-facebook {
+  background: #3b589896;
+  color: white;
+}
+
+/* Twitter */
+.socials > .fa-twitter {
+  background: #55acee77;
+  color: white;
+}
+
+/* mobile devices */
+@media screen and (min-width: 280px) and (max-width: 550px) {
+  .container {
+    width: 100vw;
+  }
+
+  .center {
+    width: 100vw;
+  }
+
+  .grid {
+    width: 100vw;
+
+    grid-template-columns: repeat(1, 1fr);
+    gap: 5px;
+    margin: auto;
+    
+  }
+
+  .box {
+    width: 80%;
+    padding: 0;
+    margin: 5px 15px;
+  }
+
+  footer {
+    width: 100%;
+  }
+
+  nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .logo-text {
+  font-size: 28px;
+  text-align: center;
+  padding-left: 3px;
+  color: aliceblue;
+  }
+
+  .date {
+  font-size: 18px;
+  text-align: center;
+  margin: 1px;
+  color: aliceblue;
+  }
+
+
+}
+
+/* tablets */
+
+@media screen and (min-width: 551px) and (max-width: 750px) {
+  .container {
+    width: 100vw;
+  }
+
+  .center {
+    width: 100vw;
+  }
+
+  .grid {
+    width: 100vw;
+
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+    margin: auto;
+    
+  }
+
+  .box {
+    width: 90%;
+    padding: 10px;
+    margin: 5px 2px;
+  }
+
+  footer {
+    width: 100%;
+  }
+
+  nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .logo-text {
+  font-size: 28px;
+  text-align: center;
+  padding-left: 3px;
+  color: aliceblue;
+  }
+
+  .date {
+  font-size: 18px;
+  text-align: center;
+  margin: 1px;
+  color: aliceblue;
+  }
+
+
+}
+
+/* larger Screens */
+@media screen and (min-width: 751px) and (max-width: 1499px) {
+
+  .container {
+    width: 100vw;
+  }
+
+  .center {
+    width: 100vw;
+  }
+
+  .grid {
+    width: 100vw;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+    margin: auto;
+    
+  }
+
+  .box {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 2px;
+  }
+
+  footer {
+    width: 100%;
+  }
+
+  nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .logo-text {
+  font-size: 28px;
+  text-align: center;
+  padding-left: 3px;
+  color: aliceblue;
+  }
+
+  .date {
+  font-size: 18px;
+  text-align: center;
+  margin: 1px;
+  color: aliceblue;
+  }
+}
